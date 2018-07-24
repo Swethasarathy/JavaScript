@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>JavaScript Confirm</title>
+</head>
+<body>
+<br>This is JavaScript code for Confirm Box</br>
+<p id="demo">
+<br> </br>
+<button onclick="myFunction()">Try it</button>
+<script>
+function myFunction()
+{
+var text;
+var r = confirm("Press a button");
+if(r== true)
+{
+text="You Pressed OK";
+}
+else
+{
+text = "You pressed Cancel";
+}
+document.getElementById("demo").innerHTML = text;
+}
+</script>
+</body>
+</html>

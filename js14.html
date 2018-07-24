@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>JavaScript Prompt</title>
+</head>
+<body>
+<br>This is the button to demonstrate prompt box</br>
+<br></br>
+<button onclick="myFunction()">Try It</button>
+<p id="demo"> </p>
+<script>
+function myFunction()
+{
+var p = prompt("Enter your name","Swetha");
+if(p!=null)
+{
+document.getElementById("demo").innerHTML = "Hello " + p + " . Which dept you belong to? ";
+}
+}
+</script>
+</body>
+</html>
