@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Length restriction</title>
+</head>
+<body>
+<script>
+function myFunction()
+{
+var pwd=document.sample.id.value;
+if(pwd.length<8)
+{
+alert("Please enter password with atleast 8 characters");
+return false;
+}
+}
+</script>
+<form name="sample" action="js23ii.html" onsubmit="myFunction()" method="post">
+Password : <input type = "password" name="id">
+<br></br>
+<input type = "submit" name ="Submit">
+</form>
+</body>
+</html>
+

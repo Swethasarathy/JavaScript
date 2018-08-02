@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Selection mode</title>
+<script>
+function myFunction()                                   
+{
+var d =  document.forms["sample"]["Dept"];
+if (d.selectedIndex <1 )                 
+{
+alert("Please choose the department");
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form name="sample"  onsubmit="return myFunction()" method="post"> 
+Choose your Department :    <select type="text" name="Dept">
+<option>Select</option>
+<option>IT</option>
+<option>CSE</option>
+<option>ECE</option>
+<option>EEE</option>
+<option>Mech</option>
+<option>Civil</option>
+<option>Aeronautical</option>
+</select>
+<br></br>
+<input type="submit"  name="Choose Field">
+</form>
+</body>
+</html>
