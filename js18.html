@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Date and Clock</title>
+</head>
+<body>
+<script>
+var dat = new Date();
+var d, a, m, y, h, min, s;
+d = dat.getDate();
+a = dat.getDay();
+m = dat.getMonth();
+y = dat.getFullYear();
+h = dat.getHours();
+min = dat.getMinutes();
+s = dat.getSeconds();
+document.write ("<br>The current date is : </br>");
+document.write("<br>DD : " + d + "  MM : " + m + "  YYYY : " + y + "</br>");
+document.write ("<br>The current time is : </br>");
+document.write("<br>hh : " + h + "  mm : " + min + "  ss : " + s  + "</br>");
+document.write("<br>Day : " + a +"</br>");
+</script>
+</body>
+</html>

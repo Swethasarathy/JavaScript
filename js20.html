@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Check for numeric</title>
+<script>
+function myFunction()
+{
+var a = document.forms["sample"]["id"].value;
+if(isNaN(a))
+{
+alert("Please enter the number");
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form name="sample" action="js20ii.html" onsubmit="return myFunction()" method="post">
+ID : <input type = "text" name="id">
+<br></br>
+<input type = "submit" name ="Submit">
+</form>
+</body>
+</html>
