@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Web Form</title>
+</head>
+<body>
+<form name="sample" onsubmit="return myFunction()" method="post">
+<h1>Welcome Guest.........</h1>
+<br></br>
+<br>Name                    <input type="text" name="name"></br><br></br>
+<br>Email Id               <input type="text" size=65 name="id"></br><br></br>
+<br>Address                <textarea rows="4" cols="75"></textarea><br></br>
+<br>Mobile Number   <input type="text" name="mobile"></br><br></br>
+<br>Gender                  <input type="radio" name="gender">Male  <input type="radio" name="gender">Female  <input type="radio" name="gender">Transgender</br><br></br>
+<br></br>
+</form>
+<button onclick="myFunction()">Register</button>
+<script>
+function myFunction()
+{
+var a = document.forms["sample"]["name"].value;
+var b = document.forms["sample"]["mobile"].value;
+var mail = document.forms["sample"]["id"];
+if(!(isNaN(a)))
+{
+alert("Please enter the Letters");
+return false;
+}
+ if(isNaN(b))
+{
+alert("Please enter the Numbers");
+return false;
+}
+if(mail.value=="")
+{
+alert("Please enter a valid e-mail address.");
+return false;
+}
+if(mail.value.indexOf("@", 0) <0)
+{
+alert("Please enter a valid e-mail address.");
+return false;
+}
+if(mail.value.indexOf(".",0)<0)
+{
+alert("Please enter a valid e-mail address.");
+return false;
+}
+else
+{
+alert("Registration Successful.Thank you!!!");
+return false;
+}
+}
+</script>
+</body>
+</html>
